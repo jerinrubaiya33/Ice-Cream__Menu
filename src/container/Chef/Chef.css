@@ -1,0 +1,152 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  /* outline: 1px solid rgb(221, 255, 0); */
+}
+
+body,
+html {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background: url("../../assets/chef.png") no-repeat center center fixed;
+  background-size: cover;
+  font-family: var(--font-base);
+}
+
+/* Main container */
+.app__wrapper_img {
+  /* order: 2; */
+}
+
+.app__wrapper_info {
+  flex: 1;
+  padding: 2rem;
+  color: #ffffff;
+  font-family: var(--font-base);
+  font-size: 30px;
+  margin-right: -40px;
+  font-weight: bold;
+}
+.app__h1 {
+  font-family: var(--font-base);
+  font-size: 78px;
+  margin-top: -30px;
+  color: #ffffff;
+}
+
+.app__chef__content_quote {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.app__chef__content_quote img {
+  width: 30px;
+  height: 25px;
+}
+
+.app__p {
+  font-size: 19px;
+  line-height: 1.6;
+  color: #ffffff;
+  font-family: var(--font-base);
+}
+
+.app__chef__sign {
+  margin-top: 10px;
+  font-family: var(--font-base);
+}
+
+.app__chef__sign p:first-child {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 0;
+  color: #ffffff;
+}
+
+.app__chef__sign img {
+  width: 100px;
+  margin-top: 0;
+}
+
+/* ------------------- MEDIA QUERIES ------------------- */
+@media only screen and (max-width: 768px) {
+  .spoon__img {
+    margin-top: 130px !important;
+  }
+
+  .subheading-center {
+    text-align: center;
+    margin-left: -2rem !important;
+    padding: 0.5rem 0.49rem !important;
+  }
+
+  .app__wrapper {
+    margin-top: -180px;
+  }
+  .app__wrapper_info {
+    font-size: 0px !important;
+    margin-right: 0;
+    padding: 1rem !important;
+  }
+
+  .app__h1 {
+    font-size: 22px !important;
+  }
+
+  .app__p {
+    font-size: 15px !important;
+  }
+  .app__chef__sign img {
+    width: 100px !important;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .app__wrapper_info {
+    font-size: 20px;
+    padding: 1rem;
+  }
+  .chefs__word {
+    color: white;
+    background: none;
+    font-size: 18px;
+    text-align: center;
+    position: relative;
+    margin-bottom: 0rem;
+  }
+
+  .sub-title {
+    margin-left: -25px !important;
+    margin-bottom: 10px !important;
+  }
+  .app__h1 {
+    font-size: 36px;
+  }
+
+  .app__p {
+    font-size: 14px;
+  }
+
+  .app__chef__sign p:first-child {
+    font-size: 18px;
+  }
+
+  .app__chef__sign img {
+    width: 60px;
+  }
+
+  .app__chef__content_quote {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .app__chef__content_quote img {
+    width: 20px;
+    height: 16px;
+  }
+}

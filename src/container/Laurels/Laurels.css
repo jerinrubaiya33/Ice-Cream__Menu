@@ -1,0 +1,123 @@
+.app__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 100vh;
+  padding: 4rem;
+}
+
+.app__wrapper_info {
+  flex: 1;
+  padding-right: 2rem;
+  min-width: 700px;
+  margin-left: 450px;
+}
+
+.app__h1 {
+  font-family: var(--font-base);
+  font-size: 68px;
+  margin-top: -50px;
+  color: #ffffff;
+}
+
+.p__sub {
+  font-family: var(--font-base);
+  font-size: 1.2rem;
+  margin-bottom: -19px;
+  color: #eae8e8;
+}
+
+.p__cormorant1 {
+  font-family: var(--font-base);
+  font-size: 2rem;
+  margin: 0.2rem 0;
+  margin-bottom: 0px;
+  color: #ffffff;
+}
+
+.app__laurels-awards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin: 1rem 0;
+}
+
+.app__laurels-award {
+  display: flex;
+  align-items: center;
+  max-width: 300px;
+}
+
+.app__laurels-award img {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+  margin-right: 1rem;
+}
+
+.app__laurels-award-content {
+  display: flex;
+  flex-direction: column;
+}
+
+/* -------------------- MEDIA QUERIES -------------------- */
+@media only screen and (max-width: 1024px) {
+  .app__wrapper {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 2rem;
+  }
+
+  .app__wrapper_info {
+    min-width: 100%;
+    margin-left: 0;
+    padding-right: 0;
+  }
+
+  .app__h1 {
+    font-size: 48px;
+    margin-top: -20px;
+  }
+
+  .p__cormorant1 {
+    font-size: 1.5rem;
+  }
+
+  .p__sub {
+    font-size: 1rem;
+  }
+
+  .app__laurels-awards {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .app__wrapper {
+    padding: 10rem 1.5rem !important;
+    margin-top: 0px;
+    margin-bottom: 20px !important;
+  }
+  .app__h1 {
+    font-size: 45px !important  ;
+  }
+
+  .p__cormorant1 {
+    font-size: 1.2rem;
+    margin-top: -22px !important;
+  }
+
+  .app__laurels-award {
+    max-width: 100%;
+  }
+
+  .app__laurels-award img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .p__sub {
+    font-size: 0.95rem;
+  }
+}

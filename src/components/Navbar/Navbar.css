@@ -1,0 +1,245 @@
+.app__navbar {
+  position: sticky;
+  top: -10px;
+  width: 100%;
+  z-index: 1000;
+}
+/* *{
+  outline: 1px solid saddlebrown;
+} */
+.navbar__wave {
+  top: -15px;
+  width: 100%;
+  position: relative;
+}
+
+.navbar__wave svg {
+  display: block;
+  position: absolute;
+  top: 0;
+
+  left: 0;
+  width: 100%;
+  height: 180px;
+  z-index: -1;
+}
+
+.wave-light-desktop {
+  display: block;
+}
+
+.wave-light-mobile {
+  display: none;
+}
+
+.navbar__sparkles {
+  position: absolute;
+  top: -175px;
+  left: 0;
+  width: 100%;
+  height: 250px;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.sparkle {
+  position: absolute;
+  width: 4px;
+  height: 10px;
+  border-radius: 2px;
+  opacity: 1;
+  animation: sprinkle-float 1s linear forwards;
+}
+
+@keyframes sprinkle-float {
+  0% {
+    transform: translateY(0) rotate(0deg);
+    opacity: 1;
+  }
+  50% {
+    transform: translateY(-15px) rotate(30deg);
+    opacity: 0.7;
+  }
+  100% {
+    transform: translateY(-30px) rotate(60deg);
+    opacity: 0;
+  }
+}
+
+.app__navbar-content {
+ 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1rem;
+  width: 100%;
+  position: relative;
+}
+
+.app__navbar-logo {
+  margin-top: -200px;
+  display: flex;
+  align-items: center;
+  height: 340px;
+  margin-left: -50px;
+}
+
+.app__navbar-logo img {
+  margin-bottom: -97px;
+  height: 100%;
+  width: auto;
+  object-fit: contain;
+  display: block;
+}
+
+.app__navbar-links {
+  margin-top: -105px;
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+  flex-grow: 1;
+  justify-content: center;
+  font-family: var(--font-base);
+}
+
+.app__navbar-links li a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 900;
+  -webkit-text-stroke: 0.4px #ffffff;
+  font-size: 26px;
+}
+
+.app__navbar-links li a:hover {
+  border-bottom: 2px solid rgb(255, 255, 255);
+}
+
+.app__navbar-login {
+  margin-top: -105px;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  white-space: nowrap;
+}
+
+.app__navbar-login a {
+  font-family: var(--font-base);
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 900;
+  font-size: 23px;
+  -webkit-text-stroke: 0.4px #ffffff;
+}
+
+.app__navbar-login a:hover {
+  border-bottom: 2px solid rgb(255, 255, 255);
+}
+
+.app__navbar-login div {
+  height: 15px;
+  width: 1px;
+  background: #ffffff;
+}
+
+.app__navbar-smallscreen {
+  display: none;
+}
+
+.hamburger-icon {
+  color: #ffffff;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.overlay__close {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  cursor: pointer;
+  color: #ffffff;
+  font-size: 24px;
+}
+
+/* Mobile Menu Overlay */
+.app__navbar-smallscreen_overlay {
+  position: fixed;
+  inset: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(239, 74, 74, 0.95);
+  backdrop-filter: blur(4px);
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.app__navbar-smallscreen_links {
+  list-style: none;
+  text-align: center;
+}
+
+.app__navbar-smallscreen_links li {
+  margin: 1rem 0;
+}
+
+.app__navbar-smallscreen_links a {
+  text-decoration: none;
+  color: white;
+  font-size: 26px;
+  font-weight: bold;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 1150px) {
+  .app__navbar-links,
+  .app__navbar-login {
+    display: none;
+  }
+
+  .app__navbar-smallscreen {
+    display: flex;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .overlay__close {
+    font-size: 50px !important; 
+  }
+  .app__navbar-content {
+    transform: none !important;
+    right: 0;
+    padding: 1rem;
+  }
+
+  .navbar__wave {
+    top: -30px;
+  }
+
+  .app__navbar-logo img {
+    height: 280px;
+    width: auto;
+    margin-left: -20px;
+    margin-top: -14px;
+  }
+
+  .hamburger-icon {
+    margin-top: -110px;
+    font-size: 30px;
+    margin-left: 0rem;
+  }
+  .sparkle {
+    width: 3px;
+    height: 7px;
+  }
+
+  .wave-light-desktop {
+    display: none;
+  }
+
+  .wave-light-mobile {
+    display: block;
+  }
+}

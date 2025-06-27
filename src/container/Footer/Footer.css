@@ -1,0 +1,143 @@
+.app__footer {
+  width: 100%;
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  background-color: #fe3a3a;
+  padding: 0;
+}
+.app__footer-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../../assets/iceCreamee.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 0.3;
+  z-index: 0;
+}
+
+.app__footer-links {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 5rem;
+  padding: 0 2rem;
+  flex-wrap: wrap;
+}
+
+.app__footer-links_contact,
+.app__footer-links_work,
+.app__footer-links_logo {
+  flex: 1;
+  margin: 1rem;
+  text-align: center;
+}
+
+.app__footer-links_logo {
+  margin-top: -218px ;
+}
+
+.app__footer-links_work {
+  color: white;
+}
+
+.app__footer-links_work p:nth-child(2n) {
+  margin-top: 1rem;
+  font-size: 1.7rem;
+}
+
+.app__footer-links_work p:nth-child(2n + 1) {
+  font-size: 1.4rem;
+}
+.app__footer-links_icons {
+  margin-left: -10px !important;
+}
+.app__footer-links_icons svg {
+  margin-left: 16px;
+  cursor: pointer;
+}
+
+.app__footer-links_icons svg:hover {
+  color: #cfcfcf;
+}
+
+.footer__copyright {
+  margin-top: 3rem;
+  margin-left: 2rem;
+  color: white;
+  text-align: center;
+}
+
+/* Mobile Responsive Styles */
+/* *{
+  outline: 1px solid rebeccapurple;
+} */
+@media screen and (max-width: 768px) {
+  .app__footer-links {
+    color: white;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.5rem 1rem;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 500px;
+    gap: 1.5rem;
+    margin-top: 60px;
+    position: relative;
+  }
+  
+  .p__cormorent{
+    /* background: #000 !important; */
+    line-height: 36px;
+  }
+  .p__cormorent-p{
+    margin-top: 0px !important;
+    margin-left: 2px !important;
+    margin-bottom: 20px !important;
+  }
+  .app__footer-links_contact,
+  .app__footer-links_work,
+  .app__footer-links_logo {
+    margin: 0;
+    /* background: #000; */
+    width: 100%;
+    text-align: center;
+  }
+
+  .app__footer-links_logo img {
+    margin: -9rem 0rem -11rem -2.6rem;
+    max-width: 400px;
+    /* height: auto;
+    display: block; */
+  }
+  .app__footer-headtext {
+    margin-bottom: 25px;
+  }
+  .app__footer-links_work p:nth-child(2n) {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+  }
+
+  .app__footer-links_work p:nth-child(2n + 1) {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+  }
+
+  .footer__copyright {
+    margin: 2rem 0 1rem;
+    font-size: 0.95rem;
+    text-align: center;
+    width: 100%;
+  }
+}
+.p__cormorent-follow{
+  margin-left: -0px !important;
+  font-weight: 800 !important;
+}
