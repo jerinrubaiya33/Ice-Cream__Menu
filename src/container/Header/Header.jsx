@@ -36,6 +36,7 @@ const Header = () => {
         <button
           onClick={handleExploreClick}
           style={{
+            marginTop: "-10px",
             background: "#ffffff",
             padding: "0.3rem 2.5rem",
             color: "#fc4444",
