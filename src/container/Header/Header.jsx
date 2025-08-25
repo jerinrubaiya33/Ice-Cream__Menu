@@ -25,7 +25,7 @@ const Header = () => {
           }}
         />
 
-        <h1 className="app__header-h1">The Scoop to Sweet Indulgence</h1>
+        <h1 className="app__header-h1">Scoop to Sweet Indulgence</h1>
 
         <p className="app__header-p">
           Indulge in handcrafted perfection, where velvety ice cream meets
